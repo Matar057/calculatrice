@@ -15,7 +15,7 @@ function buttonClick(value){
 
 function handleSymbol(symbol){
     switch(symbol){
-        case 'c':
+        case 'C':
             buffer = '0';
             runningTotal = 0;
             break;
@@ -36,7 +36,7 @@ function handleSymbol(symbol){
             }
             break;
         case '+':
-        case '-':
+        case '−':
         case '×':
         case '÷':
             handleMath(symbol);
@@ -63,7 +63,7 @@ function handleMath(symbol){
 function flushOperator(intBuffer){
     if(previousOperator === '+'){
         runningTotal += intBuffer;
-    }else if(previousOperator === '-'){
+    }else if(previousOperator === '−'){
         runningTotal -= intBuffer;
     }else if(previousOperator === '×'){
         runningTotal *= intBuffer;
