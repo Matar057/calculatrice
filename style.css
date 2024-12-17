@@ -22,7 +22,7 @@ body{
 .wrapper{
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
-    background-image: url('images/mbaye.JPG');
+    background: rgba(255, 255, 255, 0.75);
     background-position: center;
     border: 1px solid rgba(255, 255, 255, 0.01);
     border-radius: 16px;
